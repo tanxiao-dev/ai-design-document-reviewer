@@ -159,9 +159,17 @@ OPENAI_MODEL=gpt-5.6-terra
 
 `OPENAI_MODEL` はStructured Outputs対応モデルへ変更できます。`.env` はGit管理対象外です。APIキーはフロントエンドの環境変数へ設定しないでください。
 
-## Screenshot / Demo
+## Screenshots / Demo
 
-公開中のホスト環境はありません。ローカルでBackendとFrontendを起動し、<http://localhost:3000> を開いて確認します。
+本PoCはローカル環境で動作します。BackendとFrontendを起動し、http://localhost:3000 から操作できます。
+
+### 設計書アップロード画面
+
+![image-20261024113214757](/Users/shawn/Library/Application Support/typora-user-images/image-20261024113214757.png)
+
+### AIレビュー結果
+
+![image-20261024113238965](/Users/shawn/Library/Application Support/typora-user-images/image-20261024113238965.png)
 
 1. `samples/sample_problematic_design.md` などの架空サンプルを選択する。
 2. 「レビューを実行」を押す。
