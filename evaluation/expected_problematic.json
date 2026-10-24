@@ -1,0 +1,93 @@
+{
+  "document": "sample_problematic_design.md",
+  "expected_issues": [
+    {
+      "id": "P01",
+      "category": "権限・ロール",
+      "description": "一般社員とシステム管理者の機能・権限の差が定義されていない",
+      "severity": "High",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["一般社員", "システム管理者", "権限", "機能の違い"]
+    },
+    {
+      "id": "P02",
+      "category": "入力条件",
+      "description": "利用日に過去日を許可するかが定義されていない",
+      "severity": "Medium",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["利用日", "過去", "入力条件"]
+    },
+    {
+      "id": "P03",
+      "category": "境界条件",
+      "description": "利用人数の最小値と最大値が定義されていない",
+      "severity": "Medium",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["利用人数", "最小値", "最大値"]
+    },
+    {
+      "id": "P04",
+      "category": "入出力定義",
+      "description": "利用開始時刻だけがあり、利用終了時刻または利用時間が定義されていない",
+      "severity": "High",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["利用開始時刻", "終了時刻", "利用時間"]
+    },
+    {
+      "id": "P05",
+      "category": "検証可能性",
+      "description": "適切な時間内という性能要件に客観的な判定基準がない",
+      "severity": "Medium",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["適切な時間", "応答時間", "性能"]
+    },
+    {
+      "id": "P06",
+      "category": "内部矛盾",
+      "description": "予約IDは画面上8桁だがDB定義はVARCHAR(6)で矛盾している",
+      "severity": "High",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["予約ID", "8桁", "VARCHAR(6)"]
+    },
+    {
+      "id": "P07",
+      "category": "排他制御",
+      "description": "同じ会議室・時間帯への同時予約時の競合処理が定義されていない",
+      "severity": "High",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["同じ会議室", "同じ時間帯", "同時", "競合"]
+    },
+    {
+      "id": "P08",
+      "category": "異常処理",
+      "description": "外部カレンダーAPIのエラー・タイムアウト時の処理が定義されていない",
+      "severity": "High",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["外部カレンダーAPI", "エラー", "タイムアウト", "再試行"]
+    },
+    {
+      "id": "P09",
+      "category": "権限・セキュリティ",
+      "description": "予約変更・取消時に予約者本人かを確認する認可処理が定義されていない",
+      "severity": "High",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["変更", "取消", "予約者本人", "認可"]
+    },
+    {
+      "id": "P10",
+      "category": "セキュリティ",
+      "description": "リクエスト内容をすべてログ出力するため機密情報漏えいの危険がある",
+      "severity": "High",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["通信ログ", "リクエスト内容", "情報漏えい", "機密情報"]
+    },
+    {
+      "id": "P11",
+      "category": "テスト可能性",
+      "description": "主要な操作が問題なく動くというテスト基準が曖昧で客観判定できない",
+      "severity": "Medium",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["主要な操作", "問題なく", "判定基準", "テスト"]
+    }
+  ]
+}

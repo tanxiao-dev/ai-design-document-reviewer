@@ -1,0 +1,5 @@
+{
+  "document": "sample_reference_design.md",
+  "expected_issues": [],
+  "notes": "HighまたはMediumの既知問題は設定しない。少数のLowまたはConfirmationは文書粒度に依存する改善提案として人手で確認する。"
+}

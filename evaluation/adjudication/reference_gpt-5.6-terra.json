@@ -1,0 +1,27 @@
+{
+  "document": "sample_reference_design.md",
+  "model": "gpt-5.6-terra",
+  "source_result": "evaluation/results/reference_gpt-5.6-terra.json",
+  "adjudications": [
+    {
+      "issue_id": "ISSUE-001",
+      "status": "NEEDS_CONFIRMATION",
+      "comment": ""
+    },
+    {
+      "issue_id": "ISSUE-002",
+      "status": "NEEDS_CONFIRMATION",
+      "comment": ""
+    },
+    {
+      "issue_id": "ISSUE-003",
+      "status": "NEEDS_CONFIRMATION",
+      "comment": ""
+    },
+    {
+      "issue_id": "ISSUE-004",
+      "status": "NEEDS_CONFIRMATION",
+      "comment": ""
+    }
+  ]
+}

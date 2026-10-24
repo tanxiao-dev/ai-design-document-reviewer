@@ -1,0 +1,45 @@
+{
+  "document": "sample_good_design.md",
+  "expected_issues": [
+    {
+      "id": "G01",
+      "category": "業務処理",
+      "description": "貸出処理と返却処理の具体的な手順・更新内容が不足している",
+      "severity": "Medium",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["貸出", "返却", "処理", "手順"]
+    },
+    {
+      "id": "G02",
+      "category": "状態遷移",
+      "description": "申請状態の一覧と許可される状態遷移が完全には定義されていない",
+      "severity": "Medium",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["状態", "遷移", "承認待ち", "貸出中"]
+    },
+    {
+      "id": "G03",
+      "category": "インターフェース",
+      "description": "API endpoint、HTTP method、request・response・error schemaが不足している",
+      "severity": "Medium",
+      "review_scope": "DETAIL_DESIGN",
+      "keywords": ["API", "endpoint", "HTTP", "request"]
+    },
+    {
+      "id": "G04",
+      "category": "境界条件",
+      "description": "同一期間と判定する日付重複ルールが明確でない",
+      "severity": "Medium",
+      "review_scope": "BASIC_DESIGN_CORE",
+      "keywords": ["同一期間", "重複", "境界", "終了日"]
+    },
+    {
+      "id": "G05",
+      "category": "時刻基準",
+      "description": "システム日の基準タイムゾーンが定義されていない",
+      "severity": "Low",
+      "review_scope": "BASIC_DESIGN_CONFIRMATION",
+      "keywords": ["システム日", "タイムゾーン", "基準時刻"]
+    }
+  ]
+}
