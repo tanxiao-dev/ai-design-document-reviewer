@@ -165,11 +165,11 @@ OPENAI_MODEL=gpt-5.6-terra
 
 ### 設計書アップロード画面
 
-![image-20261024113214757](/Users/shawn/Library/Application Support/typora-user-images/image-20261024113214757.png)
+![設計書アップロード画面](images/upload.png)
 
 ### AIレビュー結果
 
-![image-20261024113238965](/Users/shawn/Library/Application Support/typora-user-images/image-20261024113238965.png)
+![AIレビュー結果](images/review-result.png)
 
 1. `samples/sample_problematic_design.md` などの架空サンプルを選択する。
 2. 「レビューを実行」を押す。
